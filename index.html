@@ -1,65 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Restaurante Sabor & Arte</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Sabor & Arte</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
-    <h1>🍽️ Restaurante Sabor & Arte</h1>
-    <nav>
-      <a href="#menu">Cardápio</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
+<h1>Restaurante Sabor e Arte</h1>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="endereco.html">Endereço</a>
+    <a href="contato.html">Contato</a>
+</nav>
+</header>
+    <main class="container py-5">
+        <h2 class="text-center mb-4">Nosso Cardápio</h2>
+        
+        <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-center">
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <h3>Pizza</h3>
+                        <p>de calabresa</p>
+                        <span class="fw-bold text-danger">R$ 25,00</span>
+                    </div>
+                </div>
+            </div>
+            </div>
 
-  <section class="banner">
-    <h2>Bem-vindo ao melhor sabor da cidade!</h2>
-  </section>
+        <div id="carouselExampleInterval" class="carousel slide mt-5 shadow" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="img/images.jpg" class="d-block w-100" alt="Pizza">
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="img/istockphoto-1581084025-1024x1024.jpg" class="d-block w-100" alt="Macarrão">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/salada.jpg" class="d-block w-100" alt="Salada">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </main>
 
-  <section id="menu" class="menu">
-    <h2>Nosso Cardápio</h2>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2026 Restaurante Sabor & Arte</p>
+    </footer>
 
-    <div class="cards">
-
-      <div class="card">
-        <h3>🍔 Hambúrguer Artesanal</h3>
-        <p>Pão brioche, carne 180g, queijo e molho especial.</p>
-        <span>R$ 25,00</span>
-      </div>
-
-      <div class="card">
-        <h3>🍝 Macarrão Italiano</h3>
-        <p>Massa fresca com molho de tomate e manjericão.</p>
-        <span>R$ 30,00</span>
-      </div>
-
-      <div class="card">
-        <h3>🍕 Pizza Margherita</h3>
-        <p>Molho de tomate, mussarela e manjericão.</p>
-        <span>R$ 40,00</span>
-      </div>
-
-      <div class="card">
-        <h3>🥗 Salada Especial</h3>
-        <p>Mix de folhas, tomate, queijo e molho da casa.</p>
-        <span>R$ 20,00</span>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="contato" class="contato">
-    <h2>Contato</h2>
-    <p>📍 Avenida Jussara, 123</p>
-    <p>📞 (11) 99999-9999</p>
-  </section>
-
-  <footer>
-    <p>© 2026 Restaurante Sabor & Arte</p>
-  </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
